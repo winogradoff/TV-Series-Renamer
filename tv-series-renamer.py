@@ -62,7 +62,7 @@ def main():
     input_prefix = input('Enter prefix (empty for "{}"): '.format(most_common_prefix)).strip()
     prefix = most_common_prefix if input_prefix == '' else input_prefix
 
-    print('Rename suggestions:'.format(dir_path))
+    print('Rename suggestions:')
     for old_filename, suggestion in suggestions.items():
         print("{} -> {}".format(old_filename, "{} {}".format(prefix, suggestion)))
 
